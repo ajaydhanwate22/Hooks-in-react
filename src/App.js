@@ -1,5 +1,11 @@
 import './App.css';
+import Footer from './Component/Footer';
+import Profile from './Component/Profile';
+import Usecallback from './Component/Usecallback';
+import Usecontext from './Component/Usecontext';
 import Useeffect from './Component/Useeffect';
+import Usememo from './Component/Usememo';
+import Usereducer from './Component/Usereducer';
 import Useref from './Component/Useref';
 import Usestate from './Component/Usestate';
 
@@ -19,9 +25,18 @@ function App() {
 
       {/* most commaenly used hooks: */}
       {/* 1>usestate   2>useeffect    3>useRef   4>useMemo  5>usecallback    6>usecontext    7>usereducer     8>useLayputeffect    9>custom hook */}
-      <Usestate/>
-      <Useeffect/>
-      <Useref/>
+      <div className="container">
+        <Usestate />
+        <Useeffect />
+        <Useref />
+        <Usememo/>
+        <Usecallback/>
+        <Usecontext/>
+        <Profile/>
+        <Footer/>
+        <Usereducer/>
+      </div>
+
     </>
   );
 }

@@ -1,26 +1,26 @@
 import React, { useState } from 'react'
 
 export default function Usestate() {
-    // const [color ,setColor]=useState('Red');
-    // const changeColor = ()=>{
-    //     setColor('Blue')
-    // } 
+    const [color ,setColor]=useState('Red');
+    const changeColor = ()=>{
+        setColor('Blue')
+    } 
 
 
 
 
 
-    // const [car,setCar] = useState({
-    //     brand:"ferrari",
-    //     model:"roma",
-    //     year:"2023",
-    //     color:"Red"
-    // });
-    // const changeColor =()=>{
-    //     setCar ((pcar)=>{
-    //           return {...car,color:"Blue"}  
-    //     })
-    // }
+    const [car,setCar] = useState({
+        brand:"ferrari",
+        model:"roma",
+        year:"2023",
+        color:"Red"
+    });
+    const changecolor =()=>{
+        setCar ((pcar)=>{
+              return {...car,color:"Blue"}  
+        })
+    }
 
 
 
@@ -35,13 +35,13 @@ export default function Usestate() {
     {/* which helps us to track state in component & updates the user interface when state changes.*/}
 
     {/* ex:1  */}
-     {/* <h1>My Favourite Color is {color}!</h1>
-     <button onClick={changeColor}>Blue</button>  */}
+     <h1>My Favourite Color is {color}!</h1>
+     <button onClick={changeColor}>Blue</button> 
 
      {/* Ex:2  */}
-     {/* <h1>my {car.brand}</h1>
+     <h1>my {car.brand}</h1>
      <p>It us a {car.color} {car.model} from {car.year}</p>
-     <button onClick={changeColor}>Blue</button> */}
+     <button onClick={changecolor}>Blue</button>
 
 
      {/* ex:3  */}
